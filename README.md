@@ -7,7 +7,7 @@ The repository is intended for **authorised laboratory research and dissertation
 ## Repository status
 
 - Repository: `padlock-acoustic-decoding`
-- Submission snapshot: prepare a release/tag named `dissertation-v1.0`
+- Submission snapshot: `dissertation-v1.0`
 - Visibility at submission: **Private**
 - Public release: review with the project supervisor before changing visibility.
 
