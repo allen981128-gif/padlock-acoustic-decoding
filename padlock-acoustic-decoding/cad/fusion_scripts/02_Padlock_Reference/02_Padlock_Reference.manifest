@@ -1,0 +1,12 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "script",
+  "author": "",
+  "description": {
+    "": "Generate and align the padlock reference to the passive roller frame."
+  },
+  "version": "1.0",
+  "supportedOS": "windows|mac",
+  "editEnabled": true,
+  "iconFilename": "ScriptIcon.svg"
+}

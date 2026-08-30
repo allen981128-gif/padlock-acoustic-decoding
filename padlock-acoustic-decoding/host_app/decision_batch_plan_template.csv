@@ -1,0 +1,2 @@
+﻿profile_id,group_id,repeat_id,decision_id,start_w1,start_w2,start_w3,start_w4,active_w1,active_w2,active_w3,active_w4,scan_1,scan_2,scan_3,scan_4,binding_wheel,binding_confidence,preserve_inactive_start,enabled,notes
+P001,P001_D0,A,P001_D0,3,5,7,9,1,1,1,1,1,2,3,4,1,2,0,1,Example: continuous 40-candidate Decision

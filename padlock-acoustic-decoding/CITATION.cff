@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated MSc dissertation."
+title: "Acoustic Recognition and Closed-Loop Automated Decoding of a Mechanical Combination Padlock"
+type: software
+authors:
+  - name: "MSc project author"
+repository-code: "https://github.com/allen981128-gif/padlock-acoustic-decoding"
+version: "dissertation-v1.0"
+date-released: 2026-08-30

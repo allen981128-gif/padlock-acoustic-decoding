@@ -1,0 +1,12 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "script",
+  "author": "",
+  "description": {
+    "": "Generate the integrated printable base using frozen source dependencies."
+  },
+  "version": "1.0",
+  "supportedOS": "windows|mac",
+  "editEnabled": true,
+  "iconFilename": "ScriptIcon.svg"
+}

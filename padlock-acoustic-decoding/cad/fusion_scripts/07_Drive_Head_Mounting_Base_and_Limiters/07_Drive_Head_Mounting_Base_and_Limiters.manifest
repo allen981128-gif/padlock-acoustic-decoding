@@ -1,0 +1,12 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "script",
+  "author": "",
+  "description": {
+    "": "Generate the drive-head mounting base, supports and local limit walls."
+  },
+  "version": "1.0",
+  "supportedOS": "windows|mac",
+  "editEnabled": true,
+  "iconFilename": "ScriptIcon.svg"
+}

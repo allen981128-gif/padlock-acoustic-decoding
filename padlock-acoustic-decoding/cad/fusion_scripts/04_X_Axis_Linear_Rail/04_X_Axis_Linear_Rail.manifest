@@ -1,0 +1,12 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "script",
+  "author": "",
+  "description": {
+    "": "Generate and position the X-axis linear rail and slider platform."
+  },
+  "version": "1.0",
+  "supportedOS": "windows|mac",
+  "editEnabled": true,
+  "iconFilename": "ScriptIcon.svg"
+}

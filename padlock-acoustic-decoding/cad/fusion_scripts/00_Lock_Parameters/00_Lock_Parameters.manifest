@@ -1,0 +1,12 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "script",
+  "author": "",
+  "description": {
+    "": "Create the canonical lock and rig user parameters."
+  },
+  "version": "1.0",
+  "supportedOS": "windows|mac",
+  "editEnabled": true,
+  "iconFilename": "ScriptIcon.svg"
+}

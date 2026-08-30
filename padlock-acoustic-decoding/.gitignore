@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Application runtime/configuration
+host_app/settings.json
+host_app/dataset/
+dataset/
+raw/
+rejected/
+recognition_results/
+logs/
+*.log
+
+# Build outputs
+host_app/build/
+host_app/dist/
+*.spec.bak
+
+# PlatformIO
+firmware/.pio/
+.pio/
+
+# Notebook/runtime caches
+.ipynb_checkpoints/
+cache/
+checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large experiment data are archived separately
+*.wav

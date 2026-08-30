@@ -1,0 +1,39 @@
+{
+  "runtime_version": "MAIN_v7_FOCUS_RUNTIME_v1",
+  "source_model": "B01B02B03B04B05B06_MAIN_v7_FOCUS_PRE_B07.joblib",
+  "source_model_sha256": "ac2b68afd01eb3c43db7c12d0e581c7f5e605aa6b86968a871a410ae65b59768",
+  "runtime_npz_sha256": "caedcedbaec95cebb4e15f5aa0c6f9e80bd02c785ff464303ef7819cce32fa22",
+  "training_scope": "ONLY B01-B06",
+  "supported_wheels": [
+    1,
+    2,
+    4
+  ],
+  "required_profile_components": [
+    "CCW_A",
+    "CCW_B",
+    "CW_A",
+    "CW_B"
+  ],
+  "preprocessing": "SCAN_START-20ms..SCAN_END+100ms; selected full-window features only; per-decision robust median/MAD normalization; source scaler; shared + direction interaction + W2/W4 adapters; rank normalization; A/B mean; 50/50 physical-digit CW/CCW fusion.",
+  "feature_count": 128,
+  "expanded_feature_count": 768,
+  "direction_encoding": {
+    "CW": 1,
+    "CCW": -1
+  },
+  "direction_alpha": 0.5,
+  "wheel_beta": 0.5,
+  "score_norm": "rank",
+  "ab_mode": "mean",
+  "direction_fusion": "50/50 physical-digit CW/CCW",
+  "validation_fixture": {
+    "dataset": "B07_9638 heldout archive",
+    "profiles_checked": [
+      "B07_W1_P01",
+      "B07_W2_P01",
+      "B07_W4_P01"
+    ],
+    "result": "Runtime implementation reproduced every saved fused candidate score exactly (30/30 cells) for the checked profiles."
+  }
+}

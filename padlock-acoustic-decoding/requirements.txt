@@ -1,0 +1,2 @@
+-r host_app/requirements.txt
+-r analysis/requirements.txt

@@ -1,0 +1,16 @@
+{
+  "dataset": "RQ1-4",
+  "experimental_role": "Controlled acoustic validity dataset",
+  "password_truth": "3517",
+  "analysed_wheels": [
+    1,
+    2,
+    4
+  ],
+  "direction": "CCW",
+  "runs": 600,
+  "scans": 60,
+  "true_gate_definition": "movement ending at the externally specified correct digit",
+  "truth_source": "pre-specified experimental password, not metadata.correct_digit",
+  "all_qc_pass": true
+}

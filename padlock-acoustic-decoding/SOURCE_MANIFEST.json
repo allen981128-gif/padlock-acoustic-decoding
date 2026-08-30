@@ -1,0 +1,796 @@
+{
+  "repository": "padlock-acoustic-decoding",
+  "snapshot": "pre-dissertation-v1.0",
+  "generated_utc": "2026-08-30T22:06:01.570022+00:00",
+  "notes": "Complete RQ1-RQ23 Colab notebooks included; compact RQ1-4 QC support included; large raw datasets and bulk derived outputs remain archived separately.",
+  "files": {
+    ".gitattributes": {
+      "sha256": "a0281df76fa1b9a59e459bb483d8895f90bdfd61d3c87e90397ddb059bc3e7b9",
+      "bytes": 39
+    },
+    ".gitignore": {
+      "sha256": "b609ac4b625bd231d4159257a602358636193b1f28dc4c6901bdd57150e22521",
+      "bytes": 473
+    },
+    "CITATION.cff": {
+      "sha256": "81ba2749f80c6ce69a87710d041e89831ad320149fa63bf5b70c2c99cb7dec3a",
+      "bytes": 394
+    },
+    "GITHUB_UPLOAD_STEPS.md": {
+      "sha256": "5f221fd6981528983fdf70e54f1dccce8be279706b9fd2294e094ff9114cf340",
+      "bytes": 782
+    },
+    "README.md": {
+      "sha256": "17bd404b31620e618b0c98a06ed501decda003ce6c707fe3a8732e387a1d4c91",
+      "bytes": 5331
+    },
+    "analysis/README.md": {
+      "sha256": "6e9a22a7c2c5c4ce8e9fcdaf43aff0e6562a45e09d08d71c871cf38849a89d16",
+      "bytes": 1580
+    },
+    "analysis/RQ_INDEX.md": {
+      "sha256": "5d2b83bd19b2e9a4df8db495a557ba0a0daf5803af2467c78074a70e34bf81d0",
+      "bytes": 2601
+    },
+    "analysis/final_model_training/Final_Model_Config.json": {
+      "sha256": "4623ce090b6c66500cdd2184fd0cca0e9879a527192e88a4789b74de3e700633",
+      "bytes": 939
+    },
+    "analysis/final_model_training/Final_Model_Report.md": {
+      "sha256": "16d52f6b664403ec2b8913de63179cbedee200fdfd3f4bd39061d3def6c152c0",
+      "bytes": 2365
+    },
+    "analysis/final_model_training/Final_Model_Summary.csv": {
+      "sha256": "7a0cee40c683c64f4fcc17263446b655660e053fa5e1c119c728382ed64aef37",
+      "bytes": 1947
+    },
+    "analysis/final_model_training/Final_Model_Training.ipynb": {
+      "sha256": "99ea244390eba5c98cb366c47f1a0f068e4bdb2b8eff8d5feda8f67e483fcc97",
+      "bytes": 195033
+    },
+    "analysis/requirements.txt": {
+      "sha256": "33b064cb1091a696daa9acbeea26d9f0815ae143d0623ee7ca968a1daec8bdd9",
+      "bytes": 158
+    },
+    "analysis/rq/00_RQ1-4_QC_support/RQ1-4_qc_checks.csv": {
+      "sha256": "e2db9d60709dc8599284b6d8567f3e21cb6ed55e56397a3f5041f759d11ec19c",
+      "bytes": 901
+    },
+    "analysis/rq/00_RQ1-4_QC_support/RQ1-4_qc_manifest.csv": {
+      "sha256": "fe118b22db7eaae9693549676d13249474cc953ef095b1d3b2308f836053edbd",
+      "bytes": 141043
+    },
+    "analysis/rq/00_RQ1-4_QC_support/RQ1-4_qc_summary.json": {
+      "sha256": "737ab37d195cd246c4403ebf27fdcf9e052a5adb0e2d43e24524662eaf5919e6",
+      "bytes": 410
+    },
+    "analysis/rq/01_RQ1_Acoustic_Feasibility/01_RQ1_Acoustic_Feasibility.ipynb": {
+      "sha256": "f09a7a6a5a008b5c2466c72f87715b083e28fe45e39d1bc14eccda26731dce70",
+      "bytes": 468252
+    },
+    "analysis/rq/02_RQ2_Shackle_Loading/02_RQ2_Shackle_Loading.ipynb": {
+      "sha256": "9e5aa7523ff532d91f955b77905d04b04e944c6f73f31e3708146e65a0ba52b7",
+      "bytes": 294875
+    },
+    "analysis/rq/03_RQ3_Lock_vs_Motor_Noise/03_RQ3_Lock_vs_Motor_Noise.ipynb": {
+      "sha256": "68ab5b13f30b6f5f792ec9729b016974449f6435b6e7fc422f5a7acf4b6c4ba9",
+      "bytes": 241557
+    },
+    "analysis/rq/04_RQ4_Actuation_Repeatability/04_RQ4_Actuation_Repeatability.ipynb": {
+      "sha256": "22d25fd948cb4a21c2a6cd14bde7dda2654c91274987050996a3d76494428404",
+      "bytes": 254392
+    },
+    "analysis/rq/05_RQ5_Prev_Current_Next/05_RQ5_Prev_Current_Next.ipynb": {
+      "sha256": "4ec0d450e237346cd9b89e9852907321a1866f906424861d6a7593fe485a930e",
+      "bytes": 318949
+    },
+    "analysis/rq/06_RQ6_Context_Generalisation/06_RQ6_Context_Generalisation.ipynb": {
+      "sha256": "387443040ff530938f2564a4c30b3e8b5165a524e0374167c004f1b2d34b1c80",
+      "bytes": 338228
+    },
+    "analysis/rq/07_RQ7_Absolute_vs_Relative/07_RQ7_Absolute_vs_Relative.ipynb": {
+      "sha256": "0643db2d5c612c29e7f582b0ea966c2a6374b2af4e915da0206920c4596969e9",
+      "bytes": 284864
+    },
+    "analysis/rq/08_RQ8_Temporal_Localisation/08_RQ8_Temporal_Localisation.ipynb": {
+      "sha256": "ec12e7fe7d32bc9d4ec570125936e800737a3d0fee0483d29e3a2ae764f77e3e",
+      "bytes": 413425
+    },
+    "analysis/rq/09_RQ9_Universal_CrossWheel_Event/09_RQ9_Universal_CrossWheel_Event.ipynb": {
+      "sha256": "5d90fdd8c30f26875a48fd48a8eb5ad8b7b8ae387fe0e6de5263e066681a0d45",
+      "bytes": 248579
+    },
+    "analysis/rq/10_RQ10_Binding_First/10_RQ10_Binding_First.ipynb": {
+      "sha256": "e4a289f887dd5ffafe08ab4a96815bffa415d6162bd2a747b07851ca240b60a2",
+      "bytes": 133706
+    },
+    "analysis/rq/11_RQ11_Absolute_vs_Controlled_Ranking/11_RQ11_Absolute_vs_Controlled_Ranking.ipynb": {
+      "sha256": "ccf03a047c020fcd4be884b83db94ef4bad345ed87ce90ff3919f2517a1b640c",
+      "bytes": 219051
+    },
+    "analysis/rq/12_RQ12_Shortcut_Resistant_Dataset/12_RQ12_Shortcut_Resistant_Dataset.ipynb": {
+      "sha256": "27bacf084f6684a239ec08c9592c861c8dd92ba4995d08bf765fd811c8436497",
+      "bytes": 231037
+    },
+    "analysis/rq/13_RQ13_Current_Only_Baseline/13_RQ13_Current_Only_Baseline.ipynb": {
+      "sha256": "fdb89c977d08bad00b96647fc971251f6d22399702ea2e89dc87cc6c8e5b66a2",
+      "bytes": 36627
+    },
+    "analysis/rq/14_RQ14_Direction_Handling/14_RQ14_Direction_Handling.ipynb": {
+      "sha256": "8c7cc90f6a0ec61347701bc5cc645c24498e22cf919af0c1a8a31fd270662af8",
+      "bytes": 291874
+    },
+    "analysis/rq/15_RQ15_Repeat_Handling/15_RQ15_Repeat_Handling.ipynb": {
+      "sha256": "69dc939083c5b72b9f3f5571cf841f4c82a3b00808a58c69617af703ee741819",
+      "bytes": 210334
+    },
+    "analysis/rq/16_RQ16_Channel_Ablation/16_RQ16_Channel_Ablation.ipynb": {
+      "sha256": "2ccd1c9946d6afb430cb4194972adf64a4dc489cf66529cfe6cf202ff44100ea",
+      "bytes": 292383
+    },
+    "analysis/rq/17_RQ17_Shared_vs_Wheel_Specific/17_RQ17_Shared_vs_Wheel_Specific.ipynb": {
+      "sha256": "b3f4b82972854cdc8b5a84d49733d5829cb3b099b5b93c2a464ee68b81239cce",
+      "bytes": 55526
+    },
+    "analysis/rq/18_RQ18_Engineered_vs_Raw_Waveform/18_RQ18_Engineered_vs_Raw_Waveform.ipynb": {
+      "sha256": "8622f27b6d5f91f8498b291dcc1faede7f7f29f9248588614cd07587aedb91c5",
+      "bytes": 277018
+    },
+    "analysis/rq/18_RQ18_Engineered_vs_Raw_Waveform/RQ18_Protocol.md": {
+      "sha256": "eb13b5440ab9f8bd8571f71b5db17631833d871138537449109a1c90e3a387e1",
+      "bytes": 7420
+    },
+    "analysis/rq/18_RQ18_Engineered_vs_Raw_Waveform/RQ18_Report.md": {
+      "sha256": "767ddf959e23387ba5132b5b496d6d46e48d8e70314125501e0bfbed6a64eb2b",
+      "bytes": 2602
+    },
+    "analysis/rq/18_RQ18_Engineered_vs_Raw_Waveform/RQ18_raw_vs_engineered.py": {
+      "sha256": "40be5abcf56492c4548f30edecbb9a6788f8ad3d771bba873d75a268f685a07e",
+      "bytes": 44037
+    },
+    "analysis/rq/19_RQ19_Cross_Password_Generalisation/19_RQ19_Cross_Password_Generalisation.ipynb": {
+      "sha256": "4d2a27faabac877c414f0921fff30c1fec67ede0292004dd24b084fff2869456",
+      "bytes": 195275
+    },
+    "analysis/rq/20_RQ20_Sequential_Prefix_Dependency/20_RQ20_Sequential_Prefix_Dependency.ipynb": {
+      "sha256": "83285c910b3ed3829ae02849855161beb0a5c3edd9e038c90e1095d4aae1095b",
+      "bytes": 96464
+    },
+    "analysis/rq/20_RQ20_Sequential_Prefix_Dependency/RQ20_prefix_dependency.py": {
+      "sha256": "8b4ca3debd416d3f56e4a713dc65806071139d2495338564cacedd33483d283e",
+      "bytes": 33653
+    },
+    "analysis/rq/21_RQ21_Binding_Safety_Veto/21_RQ21_Binding_Safety_Veto.ipynb": {
+      "sha256": "b1c4069754c4c34671f7ff35d63517d09cb351ab26f3ad75106f390b74e520cc",
+      "bytes": 92096
+    },
+    "analysis/rq/21_RQ21_Binding_Safety_Veto/RQ21_binding_safety_veto.py": {
+      "sha256": "ac3fc60810f60145bd457c27efca5b9cf3e33d8e219d90f4f354879a309bae94",
+      "bytes": 34112
+    },
+    "analysis/rq/22_RQ22_W3_Physical_Unlock_Detector/22_RQ22_W3_Physical_Unlock_Detector.ipynb": {
+      "sha256": "406cb24f01fc6f8146efc7b4d04e6f35fe79d01b92f4da4ac1eb7f66bf9e1cac",
+      "bytes": 92106
+    },
+    "analysis/rq/22_RQ22_W3_Physical_Unlock_Detector/RQ22_unlock_detector.py": {
+      "sha256": "3e69623beb208d6bf67cb34af86d2d233d0d8e2ddfdbd8d63ed738c28e06ce00",
+      "bytes": 23508
+    },
+    "analysis/rq/23_RQ23_Closed_Loop_Recovery/23_RQ23_Closed_Loop_Recovery.ipynb": {
+      "sha256": "50bde21726706980849eb675a8993138c52f039f576352022220d080b1785cd7",
+      "bytes": 110469
+    },
+    "analysis/rq/23_RQ23_Closed_Loop_Recovery/RQ23_closed_loop_recovery.py": {
+      "sha256": "4a252d8d2b5e2e1638b4cf081437be59347d5633326c4fa0bcf44e6c76b2aa72",
+      "bytes": 22066
+    },
+    "cad/Mechanical_system_geometry.f3d": {
+      "sha256": "28c5d45c7183937562aa9d69103dd2d38c8d5a4f45372b5da424b6eb04fbd46d",
+      "bytes": 2357409
+    },
+    "cad/README.md": {
+      "sha256": "9111738ab2332b4010a8c061d1973f2aeffa553a46598818e3c406b253973271",
+      "bytes": 659
+    },
+    "cad/fusion_scripts/00_Lock_Parameters/00_Lock_Parameters.manifest": {
+      "sha256": "ad622dcf6ea684c37dec1f299cb72c991034072ceeba8bce6a537922ccd83539",
+      "bytes": 266
+    },
+    "cad/fusion_scripts/00_Lock_Parameters/00_Lock_Parameters.py": {
+      "sha256": "09dee79437e9b1a196975bbbb287cfd2574a4379579b341bf7775fca0965e2b3",
+      "bytes": 13810
+    },
+    "cad/fusion_scripts/00_Lock_Parameters/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/01_Passive_Shaft_Support/01_Passive_Shaft_Support.manifest": {
+      "sha256": "45a6bee4d23c241f0ec633f97551f6c59416b6bb0841c5bbe9b7a91e60d52dd4",
+      "bytes": 280
+    },
+    "cad/fusion_scripts/01_Passive_Shaft_Support/01_Passive_Shaft_Support.py": {
+      "sha256": "a63612a47f6a500cb1a5cd71cdad6828e54cf1d823c1d75ef7e1327bc3a1eb24",
+      "bytes": 7903
+    },
+    "cad/fusion_scripts/01_Passive_Shaft_Support/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/02_Padlock_Reference/02_Padlock_Reference.manifest": {
+      "sha256": "dce83a01af5cd696810ae577fa44051c6edfe703518da51d292bf743ae81657c",
+      "bytes": 285
+    },
+    "cad/fusion_scripts/02_Padlock_Reference/02_Padlock_Reference.py": {
+      "sha256": "6ef5e9f79014356b72a033c3665d0c56516ba015cea8fa62eff870c7d6edaccc",
+      "bytes": 12017
+    },
+    "cad/fusion_scripts/02_Padlock_Reference/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/03_Drive_Head/03_Drive_Head.manifest": {
+      "sha256": "a6634950fbec6d00cb52c88ce27ac85dfc212d5e6976bd940bf3b36ae60a1dbc",
+      "bytes": 299
+    },
+    "cad/fusion_scripts/03_Drive_Head/03_Drive_Head.py": {
+      "sha256": "5efabe6234fd3cce49498012d2ad4a24ddef7d1fc9911091f13abc8c22b5610b",
+      "bytes": 36422
+    },
+    "cad/fusion_scripts/03_Drive_Head/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/04_X_Axis_Linear_Rail/04_X_Axis_Linear_Rail.manifest": {
+      "sha256": "85a19ffd9e6030cc59aed979cde31f1e1681f0cb4af903a3c30b5138f23b3c7e",
+      "bytes": 281
+    },
+    "cad/fusion_scripts/04_X_Axis_Linear_Rail/04_X_Axis_Linear_Rail.py": {
+      "sha256": "b8d9514ef37a1af33b4622f66dd14ae058a1bfb87b8ee8823521883fe8adbcea",
+      "bytes": 15242
+    },
+    "cad/fusion_scripts/04_X_Axis_Linear_Rail/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/05_MG92B_Servo_Reference/05_MG92B_Servo_Reference.manifest": {
+      "sha256": "8088e4e48e259ce548bd067076ae62cb63b70756d6381fb9bccec3f96690a8ef",
+      "bytes": 261
+    },
+    "cad/fusion_scripts/05_MG92B_Servo_Reference/05_MG92B_Servo_Reference.py": {
+      "sha256": "8e09bf5b2ec219ca463f1ff35b4fcbf46e74f690cdc5d83dbce13c1aadfed4bb",
+      "bytes": 14332
+    },
+    "cad/fusion_scripts/05_MG92B_Servo_Reference/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/06_Servo_Lift_Arm/06_Servo_Lift_Arm.manifest": {
+      "sha256": "b9fc21c0d7cf74495e8f07e3fd3a83c15cb19baa642832da3006640061f739ac",
+      "bytes": 266
+    },
+    "cad/fusion_scripts/06_Servo_Lift_Arm/06_Servo_Lift_Arm.py": {
+      "sha256": "9dbaa40885087a52c852fd3d383bf28bbb1928f4b629d0481d33cfe4826c12fc",
+      "bytes": 9120
+    },
+    "cad/fusion_scripts/06_Servo_Lift_Arm/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/07_Drive_Head_Mounting_Base_and_Limiters/07_Drive_Head_Mounting_Base_and_Limiters.manifest": {
+      "sha256": "13d4c96ce7e8832bb5c62829844372a886441f5059f7f9223b5252c40ad20c0d",
+      "bytes": 286
+    },
+    "cad/fusion_scripts/07_Drive_Head_Mounting_Base_and_Limiters/07_Drive_Head_Mounting_Base_and_Limiters.py": {
+      "sha256": "7d9dc6a5d7079283742a6765e7d05b13d50b8f8036c44c1d4e7b3572a173f7b6",
+      "bytes": 56155
+    },
+    "cad/fusion_scripts/07_Drive_Head_Mounting_Base_and_Limiters/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/08_Lock_Locator_and_Limiters/08_Lock_Locator_and_Limiters.manifest": {
+      "sha256": "b973c55b5e70da79a0b367f1d0b82da0d76b5161ec6678984d2d2268763154b4",
+      "bytes": 268
+    },
+    "cad/fusion_scripts/08_Lock_Locator_and_Limiters/08_Lock_Locator_and_Limiters.py": {
+      "sha256": "c2de9610b457c2045b696cda57a997dfb2d3a7bc77e80107cfe1dcdd554a7259",
+      "bytes": 17563
+    },
+    "cad/fusion_scripts/08_Lock_Locator_and_Limiters/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/09_Shackle_Tension_Pulley_Support/09_Shackle_Tension_Pulley_Support.manifest": {
+      "sha256": "04af01c363c6d7096a5987bc6f7cf9f14655bf81b845c558bf5f578f4d3e7be6",
+      "bytes": 280
+    },
+    "cad/fusion_scripts/09_Shackle_Tension_Pulley_Support/09_Shackle_Tension_Pulley_Support.py": {
+      "sha256": "a830ecf787ad3973274676dac27cf0cf5cef72f89f03502fecbebde72c452d74",
+      "bytes": 25094
+    },
+    "cad/fusion_scripts/09_Shackle_Tension_Pulley_Support/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/10_O_Ring_Press_Wheel_Hub/10_O_Ring_Press_Wheel_Hub.manifest": {
+      "sha256": "5824f91eedc8025458f766a48ef7eb112ff13dda949601c20a443f34e8249f24",
+      "bytes": 262
+    },
+    "cad/fusion_scripts/10_O_Ring_Press_Wheel_Hub/10_O_Ring_Press_Wheel_Hub.py": {
+      "sha256": "1b91141545d61eac13d114f8cb6dc526d93deafdd9437f640e004f360a04ce15",
+      "bytes": 6694
+    },
+    "cad/fusion_scripts/10_O_Ring_Press_Wheel_Hub/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/11_Swing_Arm/11_Swing_Arm.manifest": {
+      "sha256": "2c591c1b719fc41bce9bcbaffd36843f81a2be5c283978871ae0c245c166a677",
+      "bytes": 265
+    },
+    "cad/fusion_scripts/11_Swing_Arm/11_Swing_Arm.py": {
+      "sha256": "0aceb42281cede2e99899baa32c7f08d0a97e510e9875dca5f7f290d1d366fbf",
+      "bytes": 14467
+    },
+    "cad/fusion_scripts/11_Swing_Arm/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/12_Electronics_PCB_Mounting_Base/12_Electronics_PCB_Mounting_Base.manifest": {
+      "sha256": "5e428fa0999e4e31ed949fbab3a92c85df521b71a5c3480570b7bf33ba463c16",
+      "bytes": 259
+    },
+    "cad/fusion_scripts/12_Electronics_PCB_Mounting_Base/12_Electronics_PCB_Mounting_Base.py": {
+      "sha256": "0fe8a7e3fa22bce1a24f409f63f476ef534d05ce89c3b25e40033ba78165ed7d",
+      "bytes": 9802
+    },
+    "cad/fusion_scripts/12_Electronics_PCB_Mounting_Base/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/13_Main_Base_Plate/13_Main_Base_Plate.manifest": {
+      "sha256": "bea75f65f23cfb8daa0580f72f2427220532bfa0b52ebee77b754b0b7161705d",
+      "bytes": 289
+    },
+    "cad/fusion_scripts/13_Main_Base_Plate/13_Main_Base_Plate.py": {
+      "sha256": "988aa80be40959e666e864ac023b4c843ca8bade01225f8e7a8fca591df50fce",
+      "bytes": 13307
+    },
+    "cad/fusion_scripts/13_Main_Base_Plate/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/14_Integrated_Base/14_Integrated_Base.manifest": {
+      "sha256": "c40a77e5863fbad82721d11feade6a72cfcbe52f7acdcb25706be3fcc91c95aa",
+      "bytes": 288
+    },
+    "cad/fusion_scripts/14_Integrated_Base/14_Integrated_Base.py": {
+      "sha256": "9ccba40993457c78c05ad70c56137e59a7dfe3e93fd25db541c2e528831910d8",
+      "bytes": 23251
+    },
+    "cad/fusion_scripts/14_Integrated_Base/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/01_Passive_Shaft_Support.py": {
+      "sha256": "df425eadc4b2779f1bf20976ed562df20af00d26f64eac931a5c1c2551bb3e2b",
+      "bytes": 7974
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/02_Padlock_Reference.py": {
+      "sha256": "6d1ea7ac30e4229e80bb425236a5ccce7d6eec658e135583be91746c529172e8",
+      "bytes": 12088
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/03_Drive_Head.py": {
+      "sha256": "1ff7c4bb8f87cd9aa852a9c273a48b68ae6a12e1f62f2df2cf7113feaba36443",
+      "bytes": 36493
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/04_X_Axis_Linear_Rail.py": {
+      "sha256": "1ae81d961085b12aa8fdb3bcfe2c472004a09d6d8360e8ea114411a302fe511b",
+      "bytes": 15308
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/05_MG92B_Servo_Reference.py": {
+      "sha256": "806a72a7dcc506c5bab04f8d046224420cef786b61cc8a6713f58571f0213108",
+      "bytes": 14403
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/06_Servo_Lift_Arm.py": {
+      "sha256": "f6a87bec787261717db3b3f9c5cf1bfeda51b219b83c4c14c5746315b233979f",
+      "bytes": 9191
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/07_Drive_Head_Mounting_Base_and_Limiters.py": {
+      "sha256": "b0c801c131e0342710d38f8a305edf5be43805b6d91e944e72295caf6bfe2f68",
+      "bytes": 56218
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/08_Lock_Locator_and_Limiters.py": {
+      "sha256": "7011d1e2244559dfffe0292cbef10361e6b3ec8a369a8c478f4ca822bed92a4f",
+      "bytes": 17586
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/09_Shackle_Tension_Pulley_Support.py": {
+      "sha256": "32a68bcca1cced32c88f207ef6885e4655adb845fdaf99675370c809b9a699b0",
+      "bytes": 25165
+    },
+    "cad/fusion_scripts/14_Integrated_Base/_deps/README.md": {
+      "sha256": "751ac0387af67b7383a0ef27c3e42fd6979e19098a784a11dd53254046d5f112",
+      "bytes": 568
+    },
+    "cad/fusion_scripts/15_Print_Layout/15_Print_Layout.manifest": {
+      "sha256": "9f1b5348730a1ef4c2d9ff2bc61c92903509c8ec421b0f1348838cec236ec89d",
+      "bytes": 257
+    },
+    "cad/fusion_scripts/15_Print_Layout/15_Print_Layout.py": {
+      "sha256": "833aec30b821f25e34e7c22b0010eb846f24473d0ca7b52b13a6c34d06961d42",
+      "bytes": 11410
+    },
+    "cad/fusion_scripts/15_Print_Layout/ScriptIcon.svg": {
+      "sha256": "12f6106a3b1fd36ccc5b2c221a1dfba7a1f8f58da062d3bd95a7c292452d4e3a",
+      "bytes": 90012
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/00_Lock_Parameters.py": {
+      "sha256": "53f3775eaddcbdc918a9bac9295466eb9bb4d7db3a6265232f94571258e524f2",
+      "bytes": 13825
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/01_Passive_Shaft_Support.py": {
+      "sha256": "99bed2ae5923a0b7f4c5299d6831b414bdfbc9dafcf1c6c6c79ca5659a0965ee",
+      "bytes": 7918
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/02_Padlock_Reference.py": {
+      "sha256": "2a5abd655468061aa668526a54809a5f7a4ca3f8e20c97922ce3846b4f99eaf5",
+      "bytes": 12058
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/03_Drive_Head.py": {
+      "sha256": "6afb1389630d1b045c594d72f896110e3e1bf9bd97678309e29558f1b32a126c",
+      "bytes": 36660
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/04_X_Axis_Linear_Rail.py": {
+      "sha256": "1ae81d961085b12aa8fdb3bcfe2c472004a09d6d8360e8ea114411a302fe511b",
+      "bytes": 15308
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/05_MG92B_Servo_Reference.py": {
+      "sha256": "806a72a7dcc506c5bab04f8d046224420cef786b61cc8a6713f58571f0213108",
+      "bytes": 14403
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/07_Drive_Head_Mounting_Base_and_Limiters.py": {
+      "sha256": "1a97119edc808f89d05d8138fd67ddf191e246e12d909d5cbbcee2dfd40cb348",
+      "bytes": 57392
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/10_O_Ring_Press_Wheel_Hub.py": {
+      "sha256": "205e8b4b34323d2d795a4f4cc937479be14d280bf6aa8a51e771747f5d891070",
+      "bytes": 6870
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/11_Swing_Arm.py": {
+      "sha256": "6c3e1c08aba714f1d4475f57a3471e0edf91140e2002b7c568678bf588c5fc22",
+      "bytes": 14538
+    },
+    "cad/fusion_scripts/15_Print_Layout/_deps/README.md": {
+      "sha256": "031393dcefd0b124464ad4afb19f9cbd283077b248f23596d8b81608f9b9a0aa",
+      "bytes": 897
+    },
+    "cad/fusion_scripts/3D_print/3d_print_component.stl": {
+      "sha256": "e3d3a1d9a5d13919129ef9496e357c87ae1d2a620a46b41eb9a2c840d5a7b02e",
+      "bytes": 741484
+    },
+    "cad/fusion_scripts/3D_print/3d_print_component_v2.stl": {
+      "sha256": "bf1fd12a010aa48d3dfdd3ec73f3850aa70b8bc5599e0c91196cadf10f668411",
+      "bytes": 757884
+    },
+    "cad/fusion_scripts/3D_print/Base.stl": {
+      "sha256": "6e3c25a0d6db4b548d811c1212e525f4e5559e06c30af66fbf5f4bebd017d8d0",
+      "bytes": 385284
+    },
+    "cad/fusion_scripts/3D_print/Component.stl": {
+      "sha256": "ba75d75a93a6e819204d0b7cf8072a0f175f6bae0d8f841e85653635703f07c3",
+      "bytes": 971084
+    },
+    "cad/fusion_scripts/3D_print/PCB_base.stl": {
+      "sha256": "16a76b72665cfda7842f8005fec52e1b79551199ec5fdc00332244307b6d9ca1",
+      "bytes": 133484
+    },
+    "data/README.md": {
+      "sha256": "28785b3e77f1327ad512e09c7f7d6b184c52c0b2667cdce9dedde1073cd11044",
+      "bytes": 464
+    },
+    "docs/artifact_hashes.md": {
+      "sha256": "8ad1fc4d3daf67bc879e2b88654d06de9f19e9622dcb4179a0fd0a0464c56e7e",
+      "bytes": 1427
+    },
+    "docs/dataset_structure.md": {
+      "sha256": "376d57fba9a27b0112d5aaf02721103035d3b209aef79be84f382f6d9fae3d57",
+      "bytes": 1291
+    },
+    "docs/hardware_configuration.md": {
+      "sha256": "df293b76f4c8995501f65006d6a1f904d6e042b550e34c54b8693b8068f25819",
+      "bytes": 1632
+    },
+    "docs/reproducibility.md": {
+      "sha256": "586ffd38370e908c84ace421722a1fe8d977f0ca2ea4dc1a99ae8eb46052f064",
+      "bytes": 2140
+    },
+    "firmware/.gitignore": {
+      "sha256": "d952abf002d5e1ec80c8ab1bfc9f38eb5b62fc310667d501cb2ce9f21c3effb2",
+      "bytes": 99
+    },
+    "firmware/README.md": {
+      "sha256": "159e6bdcd0d3dc04a931f5c362759058cee5981f46c3e33b024f95e609113864",
+      "bytes": 448
+    },
+    "firmware/include/AcquisitionFlow.h": {
+      "sha256": "01f975dc0c7ad304dd214f23953b279efd41784a66e1437ac2e8f6824485084f",
+      "bytes": 3147
+    },
+    "firmware/include/Calibration.h": {
+      "sha256": "6f4485203bf3d9d150d05faf88cabacddaa02ab5e2c2013f748b8417f4064360",
+      "bytes": 5610
+    },
+    "firmware/include/FeatureFlags.h": {
+      "sha256": "c31fe80702dac8e5af3eaf6d509a62c26d6b612b86fca8c4a58d8056799ac109",
+      "bytes": 462
+    },
+    "firmware/include/HardwareConfig.h": {
+      "sha256": "7b55fd23613786756f79fc9332b3a15221ef7b23fdeecc2488937ac804d1aa27",
+      "bytes": 994
+    },
+    "firmware/include/LimitSwitch.h": {
+      "sha256": "8a37eb8b312cd091fc1f2591870a7b83d77c8e79eceb21c9737af7366d3369d0",
+      "bytes": 525
+    },
+    "firmware/include/README": {
+      "sha256": "dc6d9be88119a80edf773eb5a659f4470caf81ed5e95dbfd0cd3c7a9686ccd8c",
+      "bytes": 1301
+    },
+    "firmware/include/RailController.h": {
+      "sha256": "72e7c4020b1c32b0b6f8b43428032c19ed67d7d0dc0854e74455d6ea9e24d59a",
+      "bytes": 2173
+    },
+    "firmware/include/SafetyController.h": {
+      "sha256": "3f6ff784cdc0681f24fa1afed598b47e35e267081acfb1970d104a1f942167d7",
+      "bytes": 1188
+    },
+    "firmware/include/SerialProtocol.h": {
+      "sha256": "41a70dc7cac73504e5af1800732ce0e3513fe5b580add4936685a9fb935eba32",
+      "bytes": 2878
+    },
+    "firmware/include/ServoLift.h": {
+      "sha256": "cd1017bed64ccd400131b139dbc465e7314db76231eef57e373c12c63a2a8ada",
+      "bytes": 741
+    },
+    "firmware/include/StepperAxis.h": {
+      "sha256": "0086ba25bb8459ae7338f0f2b322c0834c119907b4ddf78a46b8afc62a93ea2b",
+      "bytes": 1276
+    },
+    "firmware/include/SystemTypes.h": {
+      "sha256": "1038f19bf1bb6a825e410a89ff7c4f33009bee7db32de46a5e9be81b6d287b1d",
+      "bytes": 2133
+    },
+    "firmware/include/WheelController.h": {
+      "sha256": "b77da30be075e7339dd05ac0a1702f57f627d29c940b9f19a19a117f50f21083",
+      "bytes": 2668
+    },
+    "firmware/lib/README": {
+      "sha256": "9e753e4bef2bb4c7a3784561f50d0c42ceb7bd0c65f183e73209e86ec9892192",
+      "bytes": 1100
+    },
+    "firmware/platformio.ini": {
+      "sha256": "e8d087803c9684b656d183b22341984de9461fd09f6ed3477b32747a451f5324",
+      "bytes": 577
+    },
+    "firmware/src/AcquisitionFlow.cpp": {
+      "sha256": "494e3d60f42425f4525c7afe60b10275d69596e876e08b34cbb27c1f63aba440",
+      "bytes": 37620
+    },
+    "firmware/src/LimitSwitch.cpp": {
+      "sha256": "609c435619c600c7f2324abf1389bf7834e96bf8372e332579f7428be070dcf4",
+      "bytes": 1465
+    },
+    "firmware/src/RailController.cpp": {
+      "sha256": "9f986ed534b24951b4574f7da326fedfafb6575e8a0fb4aa9617536d40085773",
+      "bytes": 15658
+    },
+    "firmware/src/SafetyController.cpp": {
+      "sha256": "6935a9a4759bf0e567819a78e456458d34de8fa898206d48d34506cf9e0e07e4",
+      "bytes": 4601
+    },
+    "firmware/src/SerialProtocol.cpp": {
+      "sha256": "3fef4a732a27d249b3887621ce3683d43afa6856942c2e6369788e7f6a802b16",
+      "bytes": 23004
+    },
+    "firmware/src/ServoLift.cpp": {
+      "sha256": "986029b1e794440ebeca0d7bf2911342c873d5acd36efad0f5a14a5b01f5e6a5",
+      "bytes": 2664
+    },
+    "firmware/src/StepperAxis.cpp": {
+      "sha256": "fbe6bc828a6d6bc1a37d83d24da68e8a6757f8bd69f5f40f0f4586eff0b310fa",
+      "bytes": 4511
+    },
+    "firmware/src/WheelController.cpp": {
+      "sha256": "4b0726bbb258421442e62ed134825819d265d1764db9e727ca62b19d927bfe97",
+      "bytes": 14052
+    },
+    "firmware/src/main.cpp": {
+      "sha256": "1583cd83d1eca8e62cf08dca4726a21de0c12e44388062558e33237176ed09ca",
+      "bytes": 2414
+    },
+    "firmware/test/README": {
+      "sha256": "95291bce496cd8b6f92ab6f9359119d77f02fc22eec7047cc38cc818a38c2b5d",
+      "bytes": 529
+    },
+    "host_app/PadlockCollector.spec": {
+      "sha256": "e0e20c26b4085d2adccc7e307bb6640933836973012d1b5d3bec68916b14b0e8",
+      "bytes": 1173
+    },
+    "host_app/README_APP.md": {
+      "sha256": "4fb35913ecf090a41a6446a8f7642a1b1f99a63b2f3569970357f5508e5d3b13",
+      "bytes": 5195
+    },
+    "host_app/acquisition_controller.py": {
+      "sha256": "964dda2c1ddefbfcb4d757d613771b6742cd428d897716fb313e458e7bb2f094",
+      "bytes": 16862
+    },
+    "host_app/app.py": {
+      "sha256": "16858d50b887c14b99e35ea79030bfcbaa4c0a9991feb0df4a6e95060f56c9f0",
+      "bytes": 1165
+    },
+    "host_app/app_backend.py": {
+      "sha256": "d29223c3c909755e3b69d317f205a2fedc324a7a55a55dbbf6cd71e8bb7acc27",
+      "bytes": 72619
+    },
+    "host_app/app_device_control.py": {
+      "sha256": "39163e210e5e51caddd4df9086e2147c228d7ba72b6df6b3c7d2467ed0b04967",
+      "bytes": 12076
+    },
+    "host_app/app_dialogs.py": {
+      "sha256": "dedb3c7ffa0cead01114a377f9606b809ce3b2dfc1f28498f4879e85798fae06",
+      "bytes": 29587
+    },
+    "host_app/app_recognition_validation.py": {
+      "sha256": "9e2a6ef272d2aadc0b59b5fdf367bfbbfbdbd1686814b3e060b21a39307d531b",
+      "bytes": 7991
+    },
+    "host_app/app_settings.py": {
+      "sha256": "7cb3708da6ccfbd5aaec0aa264ac9e6dc5168183f6eb235e5d97a2b8f6710c8a",
+      "bytes": 2665
+    },
+    "host_app/app_task_runtime.py": {
+      "sha256": "20b14c149791b2f20c88b3f93cd8c78d2ed2deb48d94e3da3a7050fdefbe09c2",
+      "bytes": 12307
+    },
+    "host_app/app_theme.py": {
+      "sha256": "3a9c85c7be753e71599196529426deef7ddd8258e3f0f9d52b3de6d8de14f5d2",
+      "bytes": 9972
+    },
+    "host_app/app_ui.py": {
+      "sha256": "7e0bdbd39b24062a817b4e6dfa3f87f8ad2be7876469d123434c062a131d6614",
+      "bytes": 69455
+    },
+    "host_app/app_window.py": {
+      "sha256": "6a87b37387a9362a74a1eb78e34c0260c320af1975490dfa6db8cbe0fe93535e",
+      "bytes": 167687
+    },
+    "host_app/app_window_support.py": {
+      "sha256": "28baa9563361cfc2584567cf5aed53bbf16eac5ecbd5499e01382530d622c486",
+      "bytes": 22622
+    },
+    "host_app/app_workers.py": {
+      "sha256": "f60a43412d51b8969c19b153142aa40402c649d9237efe94066e383b31130efd",
+      "bytes": 3016
+    },
+    "host_app/audio_recorder.py": {
+      "sha256": "bbccedcf239dad614fd375fd22a21e133fef1f5dd5c1f4b9b6c5fd5e55fb3259",
+      "bytes": 7707
+    },
+    "host_app/auto_recognition.py": {
+      "sha256": "c980dd7a18ec363c454a49c23e67cecca682e18dd0ba7b194a26091d53c831a2",
+      "bytes": 21706
+    },
+    "host_app/binding_scan_plan_template.csv": {
+      "sha256": "1a19f1c8ebaafa89e95eb077da31259866960eab9063c89a9d22cf4e07d8c1f0",
+      "bytes": 601
+    },
+    "host_app/build_app.bat": {
+      "sha256": "b75dddff1a10b544f94201dfad2c3ef9fef6dbffefc5ac91dcf79f805fb616fd",
+      "bytes": 731
+    },
+    "host_app/collection_plan.csv": {
+      "sha256": "f2d780096e1bbe5f21e53431f1904463dfd479f84ff8e65e7f309777cebe704c",
+      "bytes": 5246
+    },
+    "host_app/config.py": {
+      "sha256": "3bfbc0724d674f5557a3cd7287d05679eec435d71ec36321ad1af814f3d5efe5",
+      "bytes": 4373
+    },
+    "host_app/decision_batch.py": {
+      "sha256": "e7d05df661d0a2c6fc14c11dfe93deedf2f5cf8af6d38bd7471e9a5ae0316729",
+      "bytes": 49970
+    },
+    "host_app/decision_batch_plan_template.csv": {
+      "sha256": "1b31f48b6782dc91d03de77d9a0948d499c8cdc4c8807f24349467fb5637824d",
+      "bytes": 319
+    },
+    "host_app/device_discovery.py": {
+      "sha256": "5caa5f862298063daded74f64a2ea6b1cab1a364c1009b2d9b936a083ebf9003",
+      "bytes": 5700
+    },
+    "host_app/main.py": {
+      "sha256": "f9fd132d12d325def29dc91a1cf49571e084ba8582894c2e8d13c8bce24beb61",
+      "bytes": 5152
+    },
+    "host_app/model_assets/MAIN_v7_FOCUS_RUNTIME.json": {
+      "sha256": "0c2e2b052ae157024490bd77c8dc6458823a7c3502baaab699433835a36c9aeb",
+      "bytes": 1304
+    },
+    "host_app/model_assets/MAIN_v7_FOCUS_RUNTIME.npz": {
+      "sha256": "caedcedbaec95cebb4e15f5aa0c6f9e80bd02c785ff464303ef7819cce32fa22",
+      "bytes": 13317
+    },
+    "host_app/model_assets/MAIN_v8_ACCURACY_ENSEMBLE_RUNTIME.json": {
+      "sha256": "f71db0d14e41b624c1d1134b8892338c6ddf5fc02833677bb02999a8671320a6",
+      "bytes": 1579
+    },
+    "host_app/model_assets/MAIN_v8_ACCURACY_ENSEMBLE_RUNTIME.npz": {
+      "sha256": "b720665076ffeeea29775cc7ab04036173c7704c4e13bee16082c3bba0362c30",
+      "bytes": 41048
+    },
+    "host_app/models.py": {
+      "sha256": "ff38af417ad38ec32bc6dc982e5ab248673f7e3d25173943713696994fbae863",
+      "bytes": 17052
+    },
+    "host_app/protocol.py": {
+      "sha256": "61079ac2e5879ae9d913a4fb791d86d012e4b874f4650eeab2f71f8a50217de4",
+      "bytes": 14284
+    },
+    "host_app/quality_control.py": {
+      "sha256": "3f69fe107aa3397b6fe642fb867ec6967e6e5cf5999f22e425725dbde2b1b409",
+      "bytes": 12805
+    },
+    "host_app/requirements.txt": {
+      "sha256": "7069ae1d0707f09d5afb50ecb0801e5f5a1b9ca756b916de016216eaa01cdb54",
+      "bytes": 200
+    },
+    "host_app/run_app.bat": {
+      "sha256": "600331600faac42eac99fb6405c210a833b6e1850e08759367ea1116c395cf74",
+      "bytes": 881
+    },
+    "host_app/run_writer.py": {
+      "sha256": "bd1279eb8d3570cfc7baf6458ae0e6569490ce427e80b38d4e04c6717c7d5ff4",
+      "bytes": 16216
+    },
+    "host_app/serial_client.py": {
+      "sha256": "1005b6440eb893baaa3f09f47170d4e5271f3b41eb1dd3599ff676825b7bb642",
+      "bytes": 15073
+    },
+    "host_app/session_controller.py": {
+      "sha256": "f7c51f64b62a00038059b2f466d640ce7023c3b8c9fd6cb3b076d42ee327bb9d",
+      "bytes": 21724
+    },
+    "host_app/settings.example.json": {
+      "sha256": "4ce379d42dcd0f6422a6910a393d517017a6ca31b71c4033978cdada5a741517",
+      "bytes": 764
+    },
+    "host_app/setup_app.bat": {
+      "sha256": "9c460c0f2e78931eeaf663e98d1244c7b0c23ced88d75c8d0ee47174475d4a8f",
+      "bytes": 1557
+    },
+    "host_app/signal_review.py": {
+      "sha256": "6fa6b455eaef796acac49b898f7c9ebee87af927e92b6c33663faf479de670fd",
+      "bytes": 48549
+    },
+    "host_app/summarize_auto_tests.py": {
+      "sha256": "5123d33095a9fa9019c94c2952a2f6f30485efd6b3816ad4caa644473adb7280",
+      "bytes": 3334
+    },
+    "host_app/true_gate_inference.py": {
+      "sha256": "24cec6133d07d2ea546f7dd9bc3967ffce25a3df41d977ec36eb580eb310b733",
+      "bytes": 50384
+    },
+    "host_app/unlock_detector_v1.py": {
+      "sha256": "2102b73c9809a73bb17923bd741f80c1256a897ee3c1c214137c9abaf3aba3d2",
+      "bytes": 4431
+    },
+    "model_assets/README.md": {
+      "sha256": "50fa7435bca25a5f29bf030cf6439868f06f06657a4001ec63f8de7029421e22",
+      "bytes": 962
+    },
+    "requirements.txt": {
+      "sha256": "e1d1b5ebc0fb12cf7915e626be32e4e31dc53c9702f41108503d0ba5facd4718",
+      "bytes": 58
+    }
+  }
+}

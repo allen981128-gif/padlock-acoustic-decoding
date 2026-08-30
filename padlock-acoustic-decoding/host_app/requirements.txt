@@ -1,0 +1,9 @@
+# Runtime dependencies for the Padlock Collector App.
+# Generate a lockfile from the final validated environment for exact reproduction.
+PySide6
+numpy
+scipy
+sounddevice
+soundfile
+pyserial
+pyinstaller

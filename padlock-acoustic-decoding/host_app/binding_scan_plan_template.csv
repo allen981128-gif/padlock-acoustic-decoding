@@ -1,0 +1,3 @@
+﻿profile_id,group_id,repeat_id,decision_id,task_type,direction,start_w1,start_w2,start_w3,start_w4,active_w1,active_w2,active_w3,active_w4,scan_1,scan_2,scan_3,scan_4,prefix_stage,prefix_valid,expected_binding_wheel,binding_confidence,preserve_inactive_start,force_reseat_before,expected_password,enabled,notes
+BP001_VALID,BP001,A,BP001_VALID_CCW,binding_scan,CCW,1,5,7,9,0,1,0,1,2,4,0,0,1,1,2,2,1,1,1111,1,Example valid W1 prefix; probe W2 then W4; 20 WAV total
+BP001_VALID,BP001,B,BP001_VALID_CCW,binding_scan,CCW,1,5,7,9,0,1,0,1,2,4,0,0,1,1,2,2,1,0,1111,1,B repeat; same physical seating as A

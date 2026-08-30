@@ -1,0 +1,51 @@
+{
+  "Logistic Regression": {
+    "C": 0.1,
+    "solver": "liblinear"
+  },
+  "RBF-SVM": {
+    "C": 1.0,
+    "gamma": "scale"
+  },
+  "HistGradientBoosting": {
+    "learning_rate": 0.05,
+    "max_iter": 160,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 1.0
+  },
+  "MLP": {
+    "hidden_1": 256,
+    "hidden_2": 128,
+    "dropout": 0.3,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 40,
+    "patience": 6,
+    "batch_size": 128
+  },
+  "deep_common": {
+    "conv_channels": 128,
+    "global_hidden": 64,
+    "head_hidden": 128,
+    "dropout": 0.3,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "max_epochs": 35,
+    "patience": 6,
+    "batch_size": 128
+  },
+  "CNN + LSTM": {
+    "hidden": 128
+  },
+  "CNN + BiLSTM": {
+    "hidden_per_direction": 64
+  },
+  "CNN + BiGRU": {
+    "hidden_per_direction": 64
+  },
+  "CNN + Transformer": {
+    "heads": 4,
+    "feedforward": 256,
+    "layers": 1
+  }
+}

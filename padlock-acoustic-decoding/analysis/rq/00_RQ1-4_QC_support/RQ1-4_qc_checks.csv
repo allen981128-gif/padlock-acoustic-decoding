@@ -1,0 +1,19 @@
+check,status,observed
+600 runs present,PASS,600
+Run IDs contiguous 1-600,PASS,1 ... 600
+200 runs per wheel,PASS,"{1: 200, 2: 200, 4: 200}"
+All direction = CCW,PASS,{'CCW': 600}
+60 complete scans,PASS,60
+10 movements per scan,PASS,{10: 60}
+100 loaded + 100 unloaded per wheel,PASS,"{(1, 'LOADED'): 100, (1, 'UNLOADED'): 100, (2, 'LOADED'): 100, (2, 'UNLOADED'): 100, (4, 'LOADED'): 100, (4, 'UNLOADED'): 100}"
+Exactly one true-gate movement per scan,PASS,{1: 60}
+20 true-gate observations per wheel,PASS,"{1: 20, 2: 20, 4: 20}"
+Every wheel/start has both load states,PASS,"{'matched_pairs': 30, 'expected': 30}"
+Every physical transition repeated 10× per load state,PASS,{10: 60}
+Sample rate = 44100 Hz,PASS,{44100: 600}
+Dual-channel recording,PASS,{2: 600}
+Final step = 171,PASS,{171: 600}
+All positions valid,PASS,0
+All quality files valid,PASS,0
+No audio overflow,PASS,0
+No non-finite audio,PASS,0

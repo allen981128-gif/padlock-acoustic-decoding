@@ -1,0 +1,10 @@
+# Common dependencies used across the archived dissertation analysis notebooks.
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn
+statsmodels
+joblib
+soundfile
+torch

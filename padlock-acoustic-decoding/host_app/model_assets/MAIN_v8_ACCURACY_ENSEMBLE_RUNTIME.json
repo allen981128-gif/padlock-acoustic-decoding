@@ -1,0 +1,53 @@
+{
+  "runtime_version": "MAIN_v8_ACCURACY_ENSEMBLE_RUNTIME_v1",
+  "source_model": "B01-B07_MAIN_v8_ACCURACY_ENSEMBLE_FROZEN.joblib",
+  "source_model_sha256": "bfffd49453315d7cb835a409105e4bf3a29412f6b5a51c75a9ac48d41f007e6a",
+  "runtime_npz_sha256": "b720665076ffeeea29775cc7ab04036173c7704c4e13bee16082c3bba0362c30",
+  "training_scope": "B01-B07 True-Gate Dataset v1 only",
+  "supported_wheels": [
+    1,
+    2,
+    4
+  ],
+  "required_profile_components": [
+    "CCW_A",
+    "CCW_B",
+    "CW_A",
+    "CW_B"
+  ],
+  "context_feature_count": 695,
+  "architecture": {
+    "shared_branch": {
+      "K": 128,
+      "C": 0.1,
+      "alpha": 0.5,
+      "beta": 0.5
+    },
+    "wheel_specific_branches": {
+      "1": {
+        "K": 128,
+        "C": 0.03,
+        "alpha": 0.5,
+        "shared_weight": 0.2
+      },
+      "2": {
+        "K": 256,
+        "C": 0.1,
+        "alpha": 0.5,
+        "shared_weight": 0.4
+      },
+      "4": {
+        "K": 256,
+        "C": 0.1,
+        "alpha": 0.5,
+        "shared_weight": 0.0
+      }
+    },
+    "component_score_norm": "within-10 rank z-score",
+    "branch_blend": "wheel-specific fixed blend after branch rank normalization",
+    "ab_mode": "mean",
+    "direction_fusion": "50/50 physical-digit CW/CCW"
+  },
+  "selection_note": "Architecture/hyperparameters selected from B01-B07 development LOPO only. 7614 and 1736 live runs were NOT used for selection or training.",
+  "evaluation_note": "Development-selected LOPO is optimistic; nested LOPO is reported separately. Next decisive test must be a new frozen prospective live password."
+}
