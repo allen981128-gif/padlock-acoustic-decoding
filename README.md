@@ -1,4 +1,4 @@
-# Acoustic Recognition and Closed-Loop Automated Decoding of a Mechanical Combination Padlock
+﻿# Acoustic Recognition and Closed-Loop Automated Decoding of a Mechanical Combination Padlock
 
 This repository is the version-controlled software and reproducibility snapshot associated with an MSc individual research project on controlled contact-acoustic recognition and closed-loop mechanical operation of a four-wheel combination padlock.
 
@@ -7,21 +7,21 @@ The repository is intended for **authorised laboratory research and dissertation
 ## Repository status
 
 - Repository: `padlock-acoustic-decoding`
-- Submission snapshot: prepare a release/tag named `dissertation-v1.0`
+- Submission snapshot: `dissertation-v1.0`
 - Visibility at submission: **Private**
 - Public release: review with the project supervisor before changing visibility.
 
 ## Contents
 
-- `host_app/` — final Python/PySide6 acquisition, signal-review and supervised recognition application.
-- `firmware/` — PlatformIO/Arduino firmware for the Adafruit Feather ESP32-S3, wheel drive, rail positioning, servo engagement, homing and acquisition timing.
-- `cad/fusion_scripts/` — parameterised Autodesk Fusion 360 scripts and print-layout utilities.
-- `cad/Mechanical_system_geometry.f3d` — archived Fusion 360 assembly/design file.
-- `analysis/rq/` — archived Colab notebooks for RQ1--RQ23; later RQs also include the companion Python implementations where these were part of the formal analysis.
-- `analysis/final_model_training/` — controlled model-family comparison on the engineered acoustic representation.
-- `model_assets/` — manifest describing the deployed frozen runtime assets stored under `host_app/model_assets/`.
-- `docs/` — hardware configuration, dataset structure, reproducibility notes and artifact hashes.
-- `data/` — data-availability note only. Raw WAV datasets are not stored in Git.
+- `host_app/` 鈥?final Python/PySide6 acquisition, signal-review and supervised recognition application.
+- `firmware/` 鈥?PlatformIO/Arduino firmware for the Adafruit Feather ESP32-S3, wheel drive, rail positioning, servo engagement, homing and acquisition timing.
+- `cad/fusion_scripts/` 鈥?parameterised Autodesk Fusion 360 scripts and print-layout utilities.
+- `cad/Mechanical_system_geometry.f3d` 鈥?archived Fusion 360 assembly/design file.
+- `analysis/rq/` 鈥?archived Colab notebooks for RQ1--RQ23; later RQs also include the companion Python implementations where these were part of the formal analysis.
+- `analysis/final_model_training/` 鈥?controlled model-family comparison on the engineered acoustic representation.
+- `model_assets/` 鈥?manifest describing the deployed frozen runtime assets stored under `host_app/model_assets/`.
+- `docs/` 鈥?hardware configuration, dataset structure, reproducibility notes and artifact hashes.
+- `data/` 鈥?data-availability note only. Raw WAV datasets are not stored in Git.
 
 ## Deployed recognition system
 
@@ -75,3 +75,4 @@ No public reuse licence is granted in this private dissertation snapshot. A publ
 ## Responsible use
 
 This project concerns physical-security research. Use the hardware and software only on locks and equipment that you own or are explicitly authorised to test. The repository is provided for academic reproducibility and examination, not for unauthorised access.
+
